@@ -15,6 +15,7 @@ import Home from "./components/Home/Home";
 import Container from "./components/shared/Container";
 import NavBar from "./components/shared/NavBar";
 import NotFound from "./components/shared/NotFound";
+import FavoriteMovies from "./components/Day4/FavoriteMovies";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path="movies/:id" element={<MovieDetails />} />
               <Route path="actors" element={<Actors />} />
             </Route>
+            <Route path="dayfour" element={<FavoriteMovies />} />
             <Route path={"*"} element={<NotFound />} />
           </Routes>
         </Container>

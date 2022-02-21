@@ -10,7 +10,7 @@ import MovieCard from "./MovieCard";
 function MovieApp() {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const onNext = () => {
     setPage(page + 1);
@@ -44,7 +44,6 @@ function MovieApp() {
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true);
       axios
         .get(
           "https://api.themoviedb.org/3/movie/popular?api_key=19bded5488fa21f4e91959b20273d9fa",
@@ -75,6 +74,7 @@ function MovieApp() {
             return (
               <Col key={m.id}>
                 <MovieCard
+                  id={m.id}
                   title={m.title}
                   posterPath={m.poster_path}
                   moviePath={`${m.id}`}
