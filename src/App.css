@@ -1,0 +1,5 @@
+.movie-poster {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}

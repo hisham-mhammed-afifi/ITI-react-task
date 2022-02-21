@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "ADIDAS Running Shoes",
+      "price": 323,
+      "rate": 3,
+      "image": "https://assets.ajio.com/medias/sys_master/root/h5a/h59/13018715881502/-1117Wx1400H-460342492-blue-MODEL.jpg"
+    },
+    {
+      "id": 1,
+      "title": "ZARA T-shirt slim-fit",
+      "price": 323,
+      "rate": 3,
+      "image": "https://cdn.shopify.com/s/files/1/2100/3755/products/Long_Sleeve_Top_Flat_Lay_Back.jpg"
+    },
+    {
+      "id": 1,
+      "title": "ZARA leather bag",
+      "price": 323,
+      "rate": 3,
+      "image": "https://i.pinimg.com/originals/c1/fc/dd/c1fcdd97f3307952f1904d1925555f18.jpg"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "shoes" },
+    { "id": 2, "name": "bags" },
+    { "id": 3, "name": "t-shirts" }
+  ],
+  "user": {
+    "name": "Hisham",
+    "email": "hisham@gmail.com",
+    "password": "12345"
+  }
+}
